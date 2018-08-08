@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-which s3cmd
+exit 0

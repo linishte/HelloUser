@@ -1,3 +1,12 @@
 language: python
 script:
 - bash -x test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: c9T3d8pH4DlZt7IiT7_BBw
+file: hello.sh
+  on:
+    repo: linishte/HelloUser
+    tags: true
+
