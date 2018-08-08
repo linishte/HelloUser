@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-sudo apt-get install s3cmd
+exit 0
+echo $?
