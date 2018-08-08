@@ -1,3 +1,11 @@
 language: python
 script:
 - bash -x test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: QjQgencHFg1z10ZRSrIv6ejMmDzgvJmPB0NXBKp8d/QiFUGiClBWxgUTubUg2VZ1n9lbuAUM8zp9E1I/dctxBo22zJtV7qUq7KMsYdQ/6sS+grJvvtjiqihAZ0ZNKwgJbsV+cFlHRwZ3NA/WoUf0GUswyzvKBIUPhAedVSAZdDC86iFWwXGZapz50T148UQJhaudoc5fAztDr8DzvzieyvJl7gr0pwdz2hFSDJ9uqI+CjSy/LhD+97jKr9TS0WChIx+ljodtd5xlz7Q1QYtqwVW1wtYwrpiMMJ45F3DgFF1ZNk/bXW/YKQ6xpagFl8vWF15vHBeVgmUudgzEwtUxNWGPVlxCXTF1UdKPcPaWDBbPzn311GS8ZBiV4YwBxBJWlaqBA67dfOg+tmaobjBasMtF3YQcsoKefBVLTc1nQ5IwXSDkmWpo/j+D5JzMR0Dj+LcMZWOTGp3/8Q0GrYvDtUOrjk3rS9enqPrWpFMj/CnMYVoi6kAXKFLsF5FrDaZkfNHE05AxLB7eIxb6n7AyFbat3luYiaxemEh8MApjyfy91C9tK7N3seokxdaKrH+DwDAom4oB7zOlQt8giQ8NvEL8SDuKNBxvevjgO5H7R6k7yrtTbScijwNSL1ApeGNgPfCz5w4hfoTk6mCEOxqBqCx+nBPF8eR1YGhgfOlR1Dw=
+  file: "hello.sh"
+  on:
+    repo: linishte/HelloUser
+    tags: true
